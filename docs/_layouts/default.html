@@ -8,7 +8,7 @@
   <meta name="description" content="{{ site.description | escape }}">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}{{ '/assets/css/site.css' | relative_url }}">
   <style>
     :root{
       --bg:#0b0d12;
@@ -34,7 +34,6 @@
     a{color:var(--link); text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:1080px;margin:0 auto;padding:24px}
-    /* Moved detailed styling into external CSS to avoid duplication */
   </style>
 </head>
 <body>
@@ -47,7 +46,7 @@
           <span class="pill muted">AI Developer Tooling</span>
         </div>
         <nav class="links">
-          <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' or page.url == site.baseurl or page.url == site.baseurl | append: '/' %}active{% endif %}">Home</a>
+          <a href="{{ '/' | relative_url }}" class="{% assign home1 = '/' | relative_url %}{% if page.url == home1 or page.url == site.baseurl or page.url == site.baseurl | append: '/' %}active{% endif %}">Home</a>
           <a href="{{ '/roadmap/quarterly/' | relative_url }}" class="{% if page.url contains '/roadmap' %}active{% endif %}">Roadmap</a>
           <a href="{{ '/landscape/vendors/' | relative_url }}" class="{% if page.url contains '/landscape/vendors' %}active{% endif %}">Vendors</a>
           <a href="{{ '/landscape/tools/' | relative_url }}" class="{% if page.url contains '/landscape/tools' %}active{% endif %}">Deep Analyses</a>
