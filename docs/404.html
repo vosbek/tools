@@ -1,0 +1,22 @@
+---
+title: Page not found
+layout: default
+permalink: /404.html
+---
+
+<h1>404 – Not Found</h1>
+<p>If you reached this page from within the site, a link may be incorrect or missing a baseurl.</p>
+<ul>
+  <li>Home: <a href="{{ '/' | relative_url }}">Go to Home</a></li>
+  <li>Roadmap: <a href="{{ '/roadmap/quarterly/' | relative_url }}">90-Day Plan</a></li>
+  <li>Vendors: <a href="{{ '/landscape/vendors/' | relative_url }}">Vendor Matrix</a></li>
+  <li>Tools: <a href="{{ '/landscape/tools/' | relative_url }}">Deep Analyses</a></li>
+  <li>Trending: <a href="{{ '/landscape/trending/' | relative_url }}">Trending Repos</a></li>
+  <li>MCP: <a href="{{ '/standards/mcp/' | relative_url }}">MCP</a></li>
+  <li>Governance: <a href="{{ '/governance/policy/' | relative_url }}">Policy</a></li>
+  <li>Metrics: <a href="{{ '/metrics/kpis/' | relative_url }}">KPIs</a></li>
+  <li>Citations: <a href="{{ '/appendix/citations/' | relative_url }}">Appendix</a></li>
+  <li>Slides: <a href="{{ '/slides/01-exec/' | relative_url }}">Exec</a></li>
+</ul>
+
+<p class="muted">Baseurl: <code>{{ site.baseurl }}</code> | Current page.url: <code>{{ page.url }}</code></p>
