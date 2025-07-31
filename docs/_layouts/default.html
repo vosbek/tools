@@ -47,7 +47,7 @@
           <span class="pill muted">AI Developer Tooling</span>
         </div>
         <nav class="links">
-          <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+          <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' or page.url == site.baseurl or page.url == site.baseurl | append: '/' %}active{% endif %}">Home</a>
           <a href="{{ '/roadmap/quarterly/' | relative_url }}" class="{% if page.url contains '/roadmap' %}active{% endif %}">Roadmap</a>
           <a href="{{ '/landscape/vendors/' | relative_url }}" class="{% if page.url contains '/landscape/vendors' %}active{% endif %}">Vendors</a>
           <a href="{{ '/landscape/tools/' | relative_url }}" class="{% if page.url contains '/landscape/tools' %}active{% endif %}">Deep Analyses</a>
