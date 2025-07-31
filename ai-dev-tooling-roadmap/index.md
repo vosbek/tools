@@ -29,13 +29,13 @@ Last updated: YYYY-MM-DD
 - Phase 3: Differentiator pilots (CLI agents, BYOK agents, spec-first tools, review/test, refactor agents) (Weeks 4–10)
 - Decision/Readout: Weeks 8–12 (normalized metrics, TCO, red-team results, shortlist)
 
-See the full quarterly plan in [roadmap/quarterly.md](roadmap/quarterly.md).
+See the full quarterly plan in [Quarterly Roadmap]({{ '/roadmap/quarterly/' | relative_url }}).
 
 ## Governance and Risk
 
 - AI governance scope expansion; policy allowlists; red-teaming and eval harness; signed extensions; centralized kill-switches
 
-Details in [governance/policy.md](governance/policy.md).
+Details in [Governance Policy]({{ '/governance/policy/' | relative_url }}).
 
 ## Metrics and Expected Outcomes
 
@@ -44,19 +44,19 @@ Details in [governance/policy.md](governance/policy.md).
 - Compliance: zero PII egress; 100% agent action auditability
 - Financials: ROI per seat; cost/KLOC improved; toil hours reduced
 
-Definitions and dashboards in [metrics/kpis.md](metrics/kpis.md).
+Definitions and dashboards in [KPIs]({{ '/metrics/kpis/' | relative_url }}).
 
 ## Vendor Landscape
 
 - Modalities impacting SDLC: IDE/Editor, CLI agents, Personal/BYOK agents, Spec/Planning, Code Intelligence, CI/CD & DevOps, Knowledge/RAG, Governance/Security, Model/Runtime
-- Capability matrix schema and vendor shortlist in [landscape/vendors.md](landscape/vendors.md).
+- Capability matrix schema and vendor shortlist in [Vendor Landscape]({{ '/landscape/vendors/' | relative_url }}).
 
 ## MCP Standards
 
 - Enterprise MCP broker, allowlist, curated servers, logging, approvals, PII redaction
-- Standards and integration patterns in [standards/mcp.md](standards/mcp.md).
+- Standards and integration patterns in [MCP Standards]({{ '/standards/mcp/' | relative_url }}).
 
 ## Citations
 
 - Every claim in public materials maps to a first‑party source; vendor-asserted items labeled accordingly.
-- See [appendix/citations.md](appendix/citations.md).
+- See [Citations Appendix]({{ '/appendix/citations/' | relative_url }}).
