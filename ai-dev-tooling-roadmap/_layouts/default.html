@@ -8,6 +8,7 @@
   <meta name="description" content="{{ site.description | escape }}">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   <style>
     :root{
       --bg:#0b0d12;
@@ -33,6 +34,8 @@
     a{color:var(--link); text-decoration:none}
     a:hover{text-decoration:underline}
     .wrap{max-width:1080px;margin:0 auto;padding:24px}
+    .links a{color:var(--text); text-decoration:none}
+    .links a:hover{color:#8ecaff; text-decoration:none}
     .shell{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.00));
       border:1px solid var(--border); border-radius:16px; box-shadow:0 10px 30px var(--shadow)}
     header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.65);backdrop-filter: blur(8px); border-bottom:1px solid var(--border)}
@@ -72,11 +75,14 @@
         <nav class="links">
           <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
           <a href="{{ '/roadmap/quarterly/' | relative_url }}" class="{% if page.url contains '/roadmap' %}active{% endif %}">Roadmap</a>
-          <a href="{{ '/landscape/vendors/' | relative_url }}" class="{% if page.url contains '/landscape' %}active{% endif %}">Vendors</a>
+          <a href="{{ '/landscape/vendors/' | relative_url }}" class="{% if page.url contains '/landscape/vendors' %}active{% endif %}">Vendors</a>
+          <a href="{{ '/landscape/tools/' | relative_url }}" class="{% if page.url contains '/landscape/tools' %}active{% endif %}">Deep Analyses</a>
+          <a href="{{ '/landscape/trending/' | relative_url }}" class="{% if page.url contains '/landscape/trending' %}active{% endif %}">Trending</a>
           <a href="{{ '/standards/mcp/' | relative_url }}" class="{% if page.url contains '/standards' %}active{% endif %}">MCP</a>
           <a href="{{ '/governance/policy/' | relative_url }}" class="{% if page.url contains '/governance' %}active{% endif %}">Governance</a>
           <a href="{{ '/metrics/kpis/' | relative_url }}" class="{% if page.url contains '/metrics' %}active{% endif %}">Metrics</a>
           <a href="{{ '/appendix/citations/' | relative_url }}" class="{% if page.url contains '/appendix' %}active{% endif %}">Citations</a>
+          <a href="{{ '/slides/01-exec/' | relative_url }}" class="{% if page.url contains '/slides' %}active{% endif %}">Slides</a>
         </nav>
       </div>
     </div>
