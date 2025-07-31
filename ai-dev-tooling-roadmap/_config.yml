@@ -1,0 +1,77 @@
+title: Nationwide AI Developer Tooling Roadmap
+description: Clean, minimal site for leadership-ready roadmap, vendor landscape, governance, metrics, and citations.
+theme: minima
+markdown: kramdown
+permalink: pretty
+show_excerpts: false
+
+minima:
+  skin: classic
+  social_links: []
+
+collections:
+  landscape:
+    output: true
+  roadmap:
+    output: true
+  standards:
+    output: true
+  governance:
+    output: true
+  metrics:
+    output: true
+  appendix:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "landscape"
+      type: landscape
+    values:
+      layout: default
+  - scope:
+      path: "roadmap"
+      type: roadmap
+    values:
+      layout: default
+  - scope:
+      path: "standards"
+      type: standards
+    values:
+      layout: default
+  - scope:
+      path: "governance"
+      type: governance
+    values:
+      layout: default
+  - scope:
+      path: "metrics"
+      type: metrics
+    values:
+      layout: default
+  - scope:
+      path: "appendix"
+      type: appendix
+    values:
+      layout: default
+
+# Navigation (for a minimal header/footer)
+nav:
+  - title: Home
+    url: /
+  - title: Roadmap
+    url: /roadmap/quarterly/
+  - title: Vendors
+    url: /landscape/vendors/
+  - title: MCP
+    url: /standards/mcp/
+  - title: Governance
+    url: /governance/policy/
+  - title: Metrics
+    url: /metrics/kpis/
+  - title: Citations
+    url: /appendix/citations/
